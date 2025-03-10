@@ -1,0 +1,159 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../img/image1.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333; /* Professional dark gray color */
+    margin: 0;
+    padding: 0;
+}
+
+.navmenu {
+    font-family: "Signika", sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.navmenu a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+    position: absolute;
+    right: 20px;
+    top:15px;
+}
+
+/* Profile Image Styling */
+.profile-img {
+    border: 5px solid #1e3a5f; /* Professional dark navy blue */
+    padding: 10px;
+    border-radius: 10px; /* Square shape with soft corners */
+    display: inline-block;
+    background-color: white;
+}
+
+.profile-img img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img img:hover {
+    transform: scale(1.05);
+}
+
+/* About Me Heading */
+.about-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1e3a5f; /* Professional dark navy blue */
+}
+
+/* About Me Text */
+.about-text {
+    font-size: 1.2rem;
+    color: #555; /* Slightly softer color for readability */
+    line-height: 1.6;
+}
+
+/* Skills Card */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card Header */
+.card-header {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* Card Body */
+.card-body {
+    background-color: #f9f9f9;
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+.card-body ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.card-body ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.card-body ul li i {
+    color: #1e3a5f;
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    color: #3c3c3c;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-heading {
+        font-size: 2rem;
+    }
+
+    .card-body ul li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-img img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .about-heading {
+        font-size: 1.8rem;
+    }
+}
